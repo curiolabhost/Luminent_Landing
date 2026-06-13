@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -284,8 +284,8 @@
 <section id="what">
   <div class="sec-head reveal">
     <span class="eyebrow">What is Luminent</span>
-    <h2>A navigable learning environment</h2>
-    <p class="lead-def">Luminent is a learning environment that connects educational content, learner activity, and instructional guidance into a single navigable system.</p>
+    <h2>Luminent is an agentic learning environment built around educational materials.</h2>
+    <p class="lead-def">Instead of storing course content in one system and using separate AI tools to create lessons, assessments, study materials, and support, Luminent brings them together into a shared environment where teachers and students can learn, create, and interact with course-specific AI agents grounded in the materials they already use.</p>
   </div>
 
   <div class="tabbar" role="tablist">
@@ -296,131 +296,182 @@
 
     <div class="scenes">
       <iframe class="scene show" id="learn" title="learn" srcdoc="&lt;!DOCTYPE html&gt;
-  &lt;html lang=&quot;en&quot;&gt;
-  &lt;head&gt;
-  &lt;meta charset=&quot;UTF-8&quot;&gt;
-  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
-  &lt;title&gt;Luminent · Learn (animated)&lt;/title&gt;
-  &lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.googleapis.com&quot;&gt;
-  &lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.gstatic.com&quot; crossorigin&gt;
-  &lt;link href=&quot;https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap&quot; rel=&quot;stylesheet&quot;&gt;
-  &lt;style&gt;
-    :root{
-      --steel:#4682B4; --ink:#0B2A3D; --paper:#F5F7FA; --gold:#E2B24A; --gold-tx:#7A5A12;
-      --gray:#D3DAE2; --grid:#E2E8EF; --muted:#5C6B79; --surface:#FFFFFF;
-      --steel-soft:rgba(70,130,180,.12); --gold-soft:rgba(226,178,74,.20);
-    }
-    *{box-sizing:border-box;margin:0;padding:0;}
-    body{font-family:&quot;Plus Jakarta Sans&quot;,-apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,sans-serif;
-         background:var(--paper);color:var(--ink);-webkit-font-smoothing:antialiased;line-height:1.5;padding:10px 0 22px;}
-    section{padding:0 28px;}
-    .wrap{max-width:960px;margin:0 auto;}
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;UTF-8&quot;&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+&lt;title&gt;Luminent · Learn (animated)&lt;/title&gt;
+&lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.googleapis.com&quot;&gt;
+&lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.gstatic.com&quot; crossorigin&gt;
+&lt;link href=&quot;https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;style&gt;
+  :root{
+    --steel:#4682B4; --ink:#0B2A3D; --paper:#F5F7FA; --gold:#E2B24A; --gold-tx:#7A5A12;
+    --gray:#D3DAE2; --grid:#E2E8EF; --muted:#5C6B79; --surface:#FFFFFF; --ok:#3F9D6B;
+    --steel-soft:rgba(70,130,180,.12); --gold-soft:rgba(226,178,74,.20);
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:&quot;Plus Jakarta Sans&quot;,-apple-system,BlinkMacSystemFont,&quot;Segoe UI&quot;,sans-serif;
+       background:var(--paper);color:var(--ink);-webkit-font-smoothing:antialiased;line-height:1.5;padding:34px 0 60px;}
+  section{padding:0 28px;}
+  .wrap{max-width:980px;margin:0 auto;}
 
-    .eyebrow{font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--steel);display:inline-flex;align-items:center;gap:8px;}
-    .eyebrow::before{content:&quot;&quot;;width:7px;height:7px;border-radius:50%;background:var(--gold);}
-    .lead{margin-bottom:22px;}
-    .lead h3{font-size:22px;font-weight:700;margin:12px 0 10px;display:flex;align-items:center;gap:10px;}
-    .lead h3::before{content:&quot;&quot;;width:11px;height:11px;border-radius:3px;background:var(--steel);}
-    .lead p{font-size:14.5px;line-height:1.7;color:var(--muted);max-width:620px;}
+  .eyebrow{font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--steel);display:inline-flex;align-items:center;gap:8px;}
+  .eyebrow::before{content:&quot;&quot;;width:7px;height:7px;border-radius:50%;background:var(--gold);}
+  .lead{margin-bottom:22px;}
+  .lead h3{font-size:22px;font-weight:700;margin:12px 0 10px;display:flex;align-items:center;gap:10px;}
+  .lead h3::before{content:&quot;&quot;;width:11px;height:11px;border-radius:3px;background:var(--steel);flex:0 0 auto;}
+  .lead p{font-size:14.5px;line-height:1.7;color:var(--muted);max-width:660px;}
 
-    .demo{position:relative;}
-    .lwin{border:1px solid var(--gray);background:var(--surface);border-radius:11px;overflow:hidden;box-shadow:0 22px 55px rgba(11,42,61,.14);}
-    .lwin-bar{display:flex;align-items:center;padding:11px 16px;background:#EEF1F5;border-bottom:1px solid var(--gray);}
-    .lwin-bar .tt{font-size:11px;letter-spacing:.04em;color:var(--muted);font-weight:600;}
+  .demo{position:relative;}
+  .lwin{border:1px solid var(--gray);background:var(--surface);border-radius:11px;overflow:hidden;box-shadow:0 22px 55px rgba(11,42,61,.14);}
+  .lwin-bar{display:flex;align-items:center;padding:11px 16px;background:#EEF1F5;border-bottom:1px solid var(--gray);}
+  .lwin-bar .tt{font-size:11px;letter-spacing:.04em;color:var(--muted);font-weight:600;}
 
-    .learn-grid{display:grid;grid-template-columns:108px 1.5fr 1fr;height:308px;}
+  /* stage holds the normal grid AND the AI takeover, crossfading between them */
+  .stage{position:relative;height:468px;}
+  .learn-grid{position:absolute;inset:0;display:grid;grid-template-columns:108px 1.45fr 1.05fr;grid-template-rows:minmax(0,1fr);
+              transition:opacity .4s ease,transform .45s ease;}
+  .ai-takeover{position:absolute;inset:0;display:flex;flex-direction:column;background:var(--surface);
+               opacity:0;visibility:hidden;transform:scale(.96);transition:opacity .4s ease,transform .45s ease;}
+  .stage.ai .learn-grid{opacity:0;visibility:hidden;transform:scale(.96);}
+  .stage.ai .ai-takeover{opacity:1;visibility:visible;transform:none;}
 
-    .units{border-right:1px solid var(--grid);padding:12px 9px;display:flex;flex-direction:column;gap:6px;background:#FAFBFC;}
-    .units .rl{font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:#A9B4C0;font-weight:700;margin:2px 2px 4px;}
-    .unit{font-size:11.5px;font-weight:600;color:var(--muted);padding:9px 9px;border-radius:6px;border:1px solid var(--grid);background:var(--surface);}
-    .unit small{display:block;font-size:9.5px;font-weight:500;color:#A9B4C0;margin-top:2px;}
-    .unit.act{background:var(--steel-soft);color:var(--ink);border-color:#C5D6E5;}
+  .units{border-right:1px solid var(--grid);padding:12px 9px;display:flex;flex-direction:column;gap:6px;background:#FAFBFC;}
+  .units .rl{font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:#A9B4C0;font-weight:700;margin:2px 2px 4px;}
+  .unit{font-size:11.5px;font-weight:600;color:var(--muted);padding:9px 9px;border-radius:6px;border:1px solid var(--grid);background:var(--surface);}
+  .unit small{display:block;font-size:9.5px;font-weight:500;color:#A9B4C0;margin-top:2px;}
+  .unit.act{background:var(--steel-soft);color:var(--ink);border-color:#C5D6E5;}
 
-    .col{display:flex;flex-direction:column;min-width:0;}
-    .col.mid{border-right:1px solid var(--grid);}
-    .tabstrip{display:flex;gap:4px;padding:9px 10px;border-bottom:1px solid var(--grid);flex-wrap:wrap;background:var(--surface);}
-    .mtab{font-family:inherit;font-size:11.5px;font-weight:600;color:var(--muted);background:#F4F7FA;border:1px solid var(--grid);border-radius:6px;padding:6px 11px;cursor:pointer;transition:background .22s ease,color .22s ease,border-color .22s ease;}
-    .mtab:hover{color:var(--ink);}
-    .mtab.on{background:var(--steel);color:#fff;border-color:var(--steel);}
-    .col.right .mtab.on{background:var(--gold);color:var(--gold-tx);border-color:var(--gold);}
+  .col{display:flex;flex-direction:column;min-width:0;}
+  .col.mid{border-right:1px solid var(--grid);}
+  .tabstrip{display:flex;gap:4px;padding:9px 10px;border-bottom:1px solid var(--grid);flex-wrap:wrap;background:var(--surface);}
+  .mtab{font-family:inherit;font-size:11.5px;font-weight:600;color:var(--muted);background:#F4F7FA;border:1px solid var(--grid);border-radius:6px;padding:6px 11px;cursor:pointer;transition:background .22s ease,color .22s ease,border-color .22s ease;}
+  .mtab:hover{color:var(--ink);}
+  .mtab.on{background:var(--steel);color:#fff;border-color:var(--steel);}
+  .col.right .mtab.on{background:var(--gold);color:var(--gold-tx);border-color:var(--gold);}
+  .mtab.ai-tab.live{background:var(--gold);color:var(--gold-tx);border-color:var(--gold);}
 
-    .body{position:relative;flex:1;}
-    .view{position:absolute;inset:0;padding:16px 16px;opacity:0;visibility:hidden;transition:opacity .3s ease;overflow:hidden;}
-    .view.on{opacity:1;visibility:visible;}
-    .ph{display:flex;align-items:center;justify-content:center;height:100%;font-size:12px;color:#AEB8C2;font-weight:500;}
+  .body{position:relative;flex:1;}
+  .view{position:absolute;inset:0;padding:16px 16px;opacity:0;visibility:hidden;transition:opacity .3s ease;overflow:auto;}
+  .view.on{opacity:1;visibility:visible;}
+  .ph{display:flex;align-items:center;justify-content:center;height:100%;font-size:12px;color:#AEB8C2;font-weight:500;}
 
-    .mk-row{height:9px;border-radius:5px;background:var(--grid);}
-    .w95{width:95%;} .w90{width:90%;} .w80{width:80%;} .w70{width:70%;} .w60{width:60%;} .w50{width:50%;}
+  .mk-row{height:9px;border-radius:5px;background:var(--grid);}
+  .w95{width:95%;} .w90{width:90%;} .w80{width:80%;} .w70{width:70%;} .w60{width:60%;} .w50{width:50%;}
 
-    .pg{display:flex;flex-direction:column;gap:10px;}
-    .pg-fig{display:flex;gap:12px;margin:4px 0;}
-    .pg-graph{flex:1;height:84px;border:1px solid var(--grid);border-radius:7px;padding:10px 10px 8px;display:flex;align-items:flex-end;gap:6px;background:#FCFDFE;}
-    .pg-graph i{flex:1;background:var(--steel);border-radius:3px 3px 0 0;opacity:.85;}
-    .pg-img{width:96px;height:84px;border:1px solid var(--grid);border-radius:7px;background:#F1F5F9;display:flex;align-items:flex-end;justify-content:center;overflow:hidden;position:relative;}
-    .pg-img svg{display:block;}
+  .pg{display:flex;flex-direction:column;gap:10px;}
+  .pg-fig{display:flex;gap:12px;margin:4px 0;}
+  .pg-graph{flex:1;height:84px;border:1px solid var(--grid);border-radius:7px;padding:10px 10px 8px;display:flex;align-items:flex-end;gap:6px;background:#FCFDFE;}
+  .pg-graph i{flex:1;background:var(--steel);border-radius:3px 3px 0 0;opacity:.85;}
+  .pg-img{width:96px;height:84px;border:1px solid var(--grid);border-radius:7px;background:#F1F5F9;display:flex;align-items:flex-end;justify-content:center;overflow:hidden;}
+  .pg-img svg{display:block;}
 
-    .sl{height:100%;display:flex;flex-direction:column;border:1px solid var(--grid);border-radius:9px;overflow:hidden;background:var(--surface);}
-    .sl-top{height:7px;background:linear-gradient(90deg,var(--steel),var(--gold));}
-    .sl-mid{flex:1;padding:18px 20px;display:flex;flex-direction:column;gap:12px;}
-    .sl-title{font-size:21px;font-weight:800;letter-spacing:-.01em;color:var(--ink);}
-    .sl-b{display:flex;align-items:center;gap:9px;}
-    .sl-b::before{content:&quot;&quot;;width:7px;height:7px;border-radius:50%;background:var(--steel);flex:0 0 auto;}
-    .sl-foot{padding:9px 20px;border-top:1px solid var(--grid);font-size:10.5px;color:var(--muted);font-weight:600;letter-spacing:.04em;}
+  .sl{height:100%;display:flex;flex-direction:column;border:1px solid var(--grid);border-radius:9px;overflow:hidden;background:var(--surface);}
+  .sl-top{height:7px;background:linear-gradient(90deg,var(--steel),var(--gold));}
+  .sl-mid{flex:1;padding:18px 20px;display:flex;flex-direction:column;gap:12px;}
+  .sl-title{font-size:21px;font-weight:800;letter-spacing:-.01em;color:var(--ink);}
+  .sl-b{display:flex;align-items:center;gap:9px;}
+  .sl-b::before{content:&quot;&quot;;width:7px;height:7px;border-radius:50%;background:var(--steel);flex:0 0 auto;}
+  .sl-foot{padding:9px 20px;border-top:1px solid var(--grid);font-size:10.5px;color:var(--muted);font-weight:600;letter-spacing:.04em;}
 
-    .ex{display:flex;flex-direction:column;gap:9px;}
-    .ex-q{font-size:13px;font-weight:600;color:var(--ink);line-height:1.45;}
-    .ex-opt{font-size:12.5px;color:var(--muted);border:1px solid var(--grid);border-radius:7px;padding:9px 12px;background:#FCFDFE;}
-    .ex-opt.sel{border-color:var(--steel);background:var(--steel-soft);color:var(--ink);font-weight:600;}
-    .ex-check{align-self:flex-start;font-family:inherit;font-size:12px;font-weight:700;color:#fff;background:var(--ink);border:none;border-radius:7px;padding:9px 18px;margin-top:2px;}
+  .ex{display:flex;flex-direction:column;gap:9px;}
+  .ex-q{font-size:13px;font-weight:600;color:var(--ink);line-height:1.45;}
+  .ex-opt{font-size:12.5px;color:var(--muted);border:1px solid var(--grid);border-radius:7px;padding:9px 12px;background:#FCFDFE;}
+  .ex-opt.sel{border-color:var(--steel);background:var(--steel-soft);color:var(--ink);font-weight:600;}
+  .ex-check{align-self:flex-start;font-family:inherit;font-size:12px;font-weight:700;color:#fff;background:var(--ink);border:none;border-radius:7px;padding:9px 18px;margin-top:2px;}
 
-    .nt{display:flex;flex-direction:column;gap:10px;}
-    .nt-add{align-self:flex-start;font-size:11px;font-weight:600;color:var(--steel);border:1px dashed #C5D6E5;border-radius:6px;padding:7px 12px;margin-top:4px;}
-    .fc{display:flex;flex-direction:column;align-items:center;gap:12px;height:100%;justify-content:center;}
-    .fc-card{width:84%;height:120px;border:1px solid var(--gray);border-radius:10px;box-shadow:0 8px 20px rgba(11,42,61,.08);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;background:var(--surface);}
-    .fc-term{font-size:22px;font-weight:800;color:var(--ink);font-family:&quot;SFMono-Regular&quot;,ui-monospace,Menlo,monospace;}
-    .fc-hint{font-size:10.5px;color:#A9B4C0;letter-spacing:.04em;}
-    .fc-count{font-size:10.5px;color:var(--muted);font-weight:600;}
-    .fl{display:flex;flex-direction:column;gap:8px;}
-    .fl-item{display:flex;align-items:center;gap:10px;font-size:12.5px;color:var(--ink);font-weight:500;border:1px solid var(--grid);border-radius:7px;padding:9px 11px;background:#FCFDFE;}
-    .fl-item .flag{width:9px;height:11px;flex:0 0 auto;background:var(--gold);clip-path:polygon(0 0,100% 0,100% 70%,55% 70%,55% 100%,40% 100%,40% 70%,0 70%);}
-    .ai{display:flex;flex-direction:column;gap:9px;height:100%;}
-    .ai-bub{font-size:11.5px;line-height:1.5;border-radius:10px;padding:9px 11px;max-width:88%;}
-    .ai-bub.user{align-self:flex-end;background:var(--steel-soft);color:var(--ink);}
-    .ai-bub.bot{align-self:flex-start;background:#F1F5F9;color:var(--muted);border:1px solid var(--grid);}
-    .ai-in{margin-top:auto;font-size:11px;color:#9AA6B2;background:#F7F9FB;border:1px solid var(--grid);border-radius:7px;padding:9px 11px;}
+  .nt{display:flex;flex-direction:column;gap:10px;}
+  .nt-add{align-self:flex-start;font-size:11px;font-weight:600;color:var(--steel);border:1px dashed #C5D6E5;border-radius:6px;padding:7px 12px;margin-top:4px;}
+  .fc{display:flex;flex-direction:column;align-items:center;gap:12px;height:100%;justify-content:center;}
+  .fc-card{width:84%;height:120px;border:1px solid var(--gray);border-radius:10px;box-shadow:0 8px 20px rgba(11,42,61,.08);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;background:var(--surface);}
+  .fc-term{font-size:22px;font-weight:800;color:var(--ink);font-family:ui-monospace,Menlo,monospace;}
+  .fc-hint{font-size:10.5px;color:#A9B4C0;letter-spacing:.04em;}
+  .fc-count{font-size:10.5px;color:var(--muted);font-weight:600;}
+  .fl{display:flex;flex-direction:column;gap:8px;}
+  .fl-item{display:flex;align-items:center;gap:10px;font-size:12.5px;color:var(--ink);font-weight:500;border:1px solid var(--grid);border-radius:7px;padding:9px 11px;background:#FCFDFE;}
+  .fl-item .flag{width:9px;height:11px;flex:0 0 auto;background:var(--gold);clip-path:polygon(0 0,100% 0,100% 70%,55% 70%,55% 100%,40% 100%,40% 70%,0 70%);}
 
-    .controls{display:flex;align-items:center;gap:14px;margin-top:14px;}
-    .replay{font-family:inherit;font-size:12.5px;font-weight:600;color:var(--ink);background:var(--surface);border:1px solid var(--gray);border-radius:7px;padding:8px 15px;cursor:pointer;transition:.15s ease;}
-    .replay:hover{border-color:var(--steel);color:var(--steel);}
-    .pstate{font-size:11px;letter-spacing:.1em;text-transform:uppercase;font-weight:600;color:var(--muted);display:inline-flex;align-items:center;gap:7px;}
-    .pstate::before{content:&quot;&quot;;width:7px;height:7px;border-radius:50%;background:var(--gold);}
-    .pstate.paused::before{background:var(--gray);}
+  /* === AI takeover: three capability screens side by side === */
+  .tk-head{padding:10px 16px;border-bottom:1px solid var(--grid);display:flex;align-items:center;gap:10px;background:#FAFBFC;}
+  .tk-ey{font-size:10.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-tx);display:inline-flex;align-items:center;gap:7px;}
+  .tk-ey::before{content:&quot;&quot;;width:7px;height:7px;border-radius:50%;background:var(--gold);}
+  .tk-sub{font-size:11px;color:var(--muted);}
+  .tk-home{margin-left:auto;font-family:inherit;font-size:11px;font-weight:700;color:var(--ink);background:var(--surface);border:1px solid var(--gray);border-radius:7px;padding:6px 13px;cursor:pointer;transition:.15s ease;}
+  .tk-home:hover{border-color:var(--steel);color:var(--steel);}
+  .cap-row{flex:1;display:grid;grid-template-columns:repeat(3,1fr);gap:12px;padding:14px;min-height:0;}
+  .cap-screen{border:1px solid var(--grid);border-radius:9px;background:var(--surface);display:flex;flex-direction:column;overflow:hidden;box-shadow:0 8px 20px rgba(11,42,61,.06);
+              opacity:0;transform:translateY(12px);transition:opacity .45s ease,transform .45s ease;}
+  .cap-screen.show{opacity:1;transform:none;}
+  .cap-bar{padding:9px 11px;background:#F4F7FA;border-bottom:1px solid var(--grid);font-size:11px;font-weight:700;color:var(--ink);display:flex;align-items:center;gap:8px;}
+  .cap-bar .n{width:18px;height:18px;border-radius:5px;background:var(--steel-soft);color:var(--steel);font-size:10px;font-weight:800;display:flex;align-items:center;justify-content:center;flex:0 0 auto;}
+  .cap-body{padding:11px;display:flex;flex-direction:column;gap:8px;flex:1;overflow:auto;}
+  .cbub{font-size:10.5px;line-height:1.5;border-radius:8px;padding:7px 9px;}
+  .cbub.user{align-self:flex-end;background:var(--steel-soft);border:1px solid #C5D6E5;color:var(--ink);max-width:94%;border-bottom-right-radius:3px;}
+  .cbub.bot{align-self:flex-start;background:#F1F5F9;border:1px solid var(--grid);color:var(--ink);max-width:97%;border-bottom-left-radius:3px;}
 
-    @media(prefers-reduced-motion:reduce){.controls{display:none;}*{animation:none!important;transition:none!important;}}
-    @media(max-width:760px){
-      .learn-grid{grid-template-columns:1fr;height:auto;}
-      .units{flex-direction:row;flex-wrap:wrap;border-right:none;border-bottom:1px solid var(--grid);}
-      .col.mid{border-right:none;border-bottom:1px solid var(--grid);}
-      .body{min-height:230px;}
-    }
-  &lt;/style&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
+  .src-box{border:1px solid var(--grid);border-left:3px solid var(--steel);border-radius:7px;background:#FCFDFE;padding:8px 10px;margin-top:2px;}
+  .src-box .sh{font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--steel);margin-bottom:6px;}
+  .src-line{font-size:10.5px;color:var(--ink);display:flex;align-items:center;gap:8px;padding:2px 0;}
+  .src-line .ic{font-size:8.5px;color:var(--muted);font-weight:700;letter-spacing:.04em;text-transform:uppercase;border:1px solid var(--grid);border-radius:4px;padding:2px 6px;background:#fff;flex:0 0 auto;}
 
-  &lt;section&gt;
-    &lt;div class=&quot;wrap&quot;&gt;
+  .quiz-tag{font-size:10px;font-weight:700;color:var(--gold-tx);background:var(--gold-soft);border:1px solid #E3CF92;border-radius:6px;padding:6px 9px;line-height:1.4;}
+  .qprev{display:flex;flex-direction:column;gap:5px;}
+  .qrow{display:flex;align-items:center;gap:8px;border:1px solid var(--grid);border-radius:6px;padding:6px 8px;background:#FCFDFE;}
+  .qrow .qn{font-size:10px;font-weight:800;color:var(--muted);font-family:ui-monospace,monospace;}
+  .qrow .qt{font-size:9px;font-weight:600;border-radius:20px;padding:2px 8px;margin-left:auto;}
+  .qrow .qt.mc{color:var(--steel);background:var(--steel-soft);}
+  .qrow .qt.sa{color:var(--gold-tx);background:var(--gold-soft);}
 
-      &lt;div class=&quot;lead&quot;&gt;
-        &lt;h3&gt;Learn&lt;/h3&gt;
-        &lt;p&gt;Students can learn within teacher-created classrooms or create their own learning environments for self-study. Learning materials become interactive experiences that support exploration, assessment, reflection, and progress tracking.&lt;/p&gt;
-      &lt;/div&gt;
+  .rem-card{border:1px solid var(--grid);border-radius:8px;background:#FCFDFE;padding:11px;display:flex;flex-direction:column;gap:10px;margin-top:2px;}
+  .rem-top{display:flex;align-items:center;justify-content:space-between;}
+  .rem-time{font-size:14px;font-weight:800;color:var(--ink);font-family:ui-monospace,monospace;background:var(--steel-soft);border:1px solid #C5D6E5;border-radius:7px;padding:4px 10px;}
+  .rem-ok{font-size:10px;font-weight:700;color:var(--ok);display:inline-flex;align-items:center;gap:5px;}
+  .rem-ok::before{content:&quot;\2713&quot;;font-weight:800;}
+  .rem-sub{font-size:11px;color:var(--muted);font-weight:600;}
+  .fc-stack{display:flex;gap:6px;}
+  .fc-stack span{flex:1;height:36px;border:1px solid var(--gray);border-radius:6px;background:var(--surface);box-shadow:0 3px 8px rgba(11,42,61,.06);}
 
-      &lt;div class=&quot;demo&quot; id=&quot;demo&quot;&gt;
-        &lt;div class=&quot;lwin&quot;&gt;
-          &lt;div class=&quot;lwin-bar&quot;&gt;&lt;span class=&quot;tt&quot;&gt;luminent.app · Unit 1 · 1.1 Variables&lt;/span&gt;&lt;/div&gt;
+  .controls{display:flex;align-items:center;gap:14px;margin-top:14px;}
+  .replay{font-family:inherit;font-size:12.5px;font-weight:600;color:var(--ink);background:var(--surface);border:1px solid var(--gray);border-radius:7px;padding:8px 15px;cursor:pointer;transition:.15s ease;}
+  .replay:hover{border-color:var(--steel);color:var(--steel);}
+  .pstate{font-size:11px;letter-spacing:.1em;text-transform:uppercase;font-weight:600;color:var(--muted);display:inline-flex;align-items:center;gap:7px;}
+  .pstate::before{content:&quot;&quot;;width:7px;height:7px;border-radius:50%;background:var(--gold);}
+  .pstate.paused::before{background:var(--gray);}
+  .hint{font-size:11px;color:#A9B4C0;}
 
-          &lt;div class=&quot;learn-grid&quot;&gt;
+  @media(prefers-reduced-motion:reduce){.controls{display:none;}*{animation:none!important;transition:none!important;}.cap-screen{opacity:1;transform:none;}}
+  @media(max-width:760px){
+    .stage{height:auto;}
+    .learn-grid{position:relative;grid-template-columns:1fr;}
+    .units{flex-direction:row;flex-wrap:wrap;border-right:none;border-bottom:1px solid var(--grid);}
+    .col.mid{border-right:none;border-bottom:1px solid var(--grid);}
+    .body{min-height:240px;}
+    .ai-takeover{position:relative;}
+    .stage.ai .learn-grid{display:none;}
+    .cap-row{grid-template-columns:1fr;}
+  }
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
 
+&lt;section&gt;
+  &lt;div class=&quot;wrap&quot;&gt;
+
+    &lt;span class=&quot;eyebrow&quot;&gt;What is Luminent · Learn&lt;/span&gt;
+    &lt;div class=&quot;lead&quot;&gt;
+      &lt;h3&gt;A learning workspace built around your course.&lt;/h3&gt;
+      &lt;p&gt;Build a personalized learning environment around your course. AI assistance is grounded in instructor materials, course content, personal notes, recordings, and learning activity, helping students generate study resources, answer questions, and navigate learning within a context they control.&lt;/p&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;demo&quot; id=&quot;demo&quot;&gt;
+      &lt;div class=&quot;lwin&quot;&gt;
+        &lt;div class=&quot;lwin-bar&quot;&gt;&lt;span class=&quot;tt&quot;&gt;luminent.app · Unit 1 · 1.1 Variables&lt;/span&gt;&lt;/div&gt;
+
+        &lt;div class=&quot;stage&quot; id=&quot;stage&quot;&gt;
+
+          &lt;!-- normal screen --&gt;
+          &lt;div class=&quot;learn-grid&quot; id=&quot;grid&quot;&gt;
             &lt;div class=&quot;units&quot;&gt;
               &lt;div class=&quot;rl&quot;&gt;Units&lt;/div&gt;
               &lt;div class=&quot;unit act&quot;&gt;Unit 1&lt;small&gt;Foundations&lt;/small&gt;&lt;/div&gt;
@@ -436,22 +487,18 @@
               &lt;/div&gt;
               &lt;div class=&quot;body&quot;&gt;
                 &lt;div class=&quot;view&quot; id=&quot;mid-none&quot;&gt;&lt;div class=&quot;ph&quot;&gt;Lesson view&lt;/div&gt;&lt;/div&gt;
-
                 &lt;div class=&quot;view&quot; id=&quot;mid-page&quot;&gt;
                   &lt;div class=&quot;pg&quot;&gt;
                     &lt;div class=&quot;mk-row w95&quot;&gt;&lt;/div&gt;
                     &lt;div class=&quot;mk-row w80&quot;&gt;&lt;/div&gt;
                     &lt;div class=&quot;pg-fig&quot;&gt;
                       &lt;div class=&quot;pg-graph&quot;&gt;&lt;i style=&quot;height:40%&quot;&gt;&lt;/i&gt;&lt;i style=&quot;height:65%&quot;&gt;&lt;/i&gt;&lt;i style=&quot;height:50%&quot;&gt;&lt;/i&gt;&lt;i style=&quot;height:85%&quot;&gt;&lt;/i&gt;&lt;i style=&quot;height:70%&quot;&gt;&lt;/i&gt;&lt;/div&gt;
-                      &lt;div class=&quot;pg-img&quot;&gt;
-                        &lt;svg width=&quot;96&quot; height=&quot;56&quot; viewBox=&quot;0 0 96 56&quot;&gt;&lt;circle cx=&quot;70&quot; cy=&quot;18&quot; r=&quot;8&quot; fill=&quot;#E2B24A&quot;/&gt;&lt;path d=&quot;M0 56 L26 26 L44 44 L64 20 L96 56 Z&quot; fill=&quot;#9FB6C7&quot;/&gt;&lt;path d=&quot;M44 56 L66 30 L96 56 Z&quot; fill=&quot;#7E97AB&quot;/&gt;&lt;/svg&gt;
-                      &lt;/div&gt;
+                      &lt;div class=&quot;pg-img&quot;&gt;&lt;svg width=&quot;96&quot; height=&quot;56&quot; viewBox=&quot;0 0 96 56&quot;&gt;&lt;circle cx=&quot;70&quot; cy=&quot;18&quot; r=&quot;8&quot; fill=&quot;#E2B24A&quot;/&gt;&lt;path d=&quot;M0 56 L26 26 L44 44 L64 20 L96 56 Z&quot; fill=&quot;#9FB6C7&quot;/&gt;&lt;path d=&quot;M44 56 L66 30 L96 56 Z&quot; fill=&quot;#7E97AB&quot;/&gt;&lt;/svg&gt;&lt;/div&gt;
                     &lt;/div&gt;
                     &lt;div class=&quot;mk-row w90&quot;&gt;&lt;/div&gt;
                     &lt;div class=&quot;mk-row w60&quot;&gt;&lt;/div&gt;
                   &lt;/div&gt;
                 &lt;/div&gt;
-
                 &lt;div class=&quot;view&quot; id=&quot;mid-slide&quot;&gt;
                   &lt;div class=&quot;sl&quot;&gt;
                     &lt;div class=&quot;sl-top&quot;&gt;&lt;/div&gt;
@@ -464,7 +511,6 @@
                     &lt;div class=&quot;sl-foot&quot;&gt;Slide 1 / 12&lt;/div&gt;
                   &lt;/div&gt;
                 &lt;/div&gt;
-
                 &lt;div class=&quot;view&quot; id=&quot;mid-exer&quot;&gt;
                   &lt;div class=&quot;ex&quot;&gt;
                     &lt;div class=&quot;ex-q&quot;&gt;Which keyword declares a block-scoped variable?&lt;/div&gt;
@@ -482,31 +528,22 @@
                 &lt;button class=&quot;mtab&quot; id=&quot;r-notes&quot;&gt;Notes&lt;/button&gt;
                 &lt;button class=&quot;mtab&quot; id=&quot;r-flash&quot;&gt;Flashcards&lt;/button&gt;
                 &lt;button class=&quot;mtab&quot; id=&quot;r-flags&quot;&gt;Review of flags&lt;/button&gt;
-                &lt;button class=&quot;mtab&quot; id=&quot;r-ai&quot;&gt;Luminent AI&lt;/button&gt;
+                &lt;button class=&quot;mtab ai-tab&quot; id=&quot;r-ai&quot;&gt;Luminent AI&lt;/button&gt;
               &lt;/div&gt;
               &lt;div class=&quot;body&quot;&gt;
                 &lt;div class=&quot;view&quot; id=&quot;right-none&quot;&gt;&lt;div class=&quot;ph&quot;&gt;Study tools&lt;/div&gt;&lt;/div&gt;
-
                 &lt;div class=&quot;view&quot; id=&quot;right-notes&quot;&gt;
                   &lt;div class=&quot;nt&quot;&gt;
-                    &lt;div class=&quot;mk-row w90&quot;&gt;&lt;/div&gt;
-                    &lt;div class=&quot;mk-row w70&quot;&gt;&lt;/div&gt;
-                    &lt;div class=&quot;mk-row w80&quot;&gt;&lt;/div&gt;
-                    &lt;div class=&quot;mk-row w50&quot;&gt;&lt;/div&gt;
+                    &lt;div class=&quot;mk-row w90&quot;&gt;&lt;/div&gt;&lt;div class=&quot;mk-row w70&quot;&gt;&lt;/div&gt;&lt;div class=&quot;mk-row w80&quot;&gt;&lt;/div&gt;&lt;div class=&quot;mk-row w50&quot;&gt;&lt;/div&gt;
                     &lt;div class=&quot;nt-add&quot;&gt;+ Add note&lt;/div&gt;
                   &lt;/div&gt;
                 &lt;/div&gt;
-
                 &lt;div class=&quot;view&quot; id=&quot;right-flash&quot;&gt;
                   &lt;div class=&quot;fc&quot;&gt;
-                    &lt;div class=&quot;fc-card&quot;&gt;
-                      &lt;div class=&quot;fc-term&quot;&gt;let&lt;/div&gt;
-                      &lt;div class=&quot;fc-hint&quot;&gt;tap to flip&lt;/div&gt;
-                    &lt;/div&gt;
+                    &lt;div class=&quot;fc-card&quot;&gt;&lt;div class=&quot;fc-term&quot;&gt;let&lt;/div&gt;&lt;div class=&quot;fc-hint&quot;&gt;tap to flip&lt;/div&gt;&lt;/div&gt;
                     &lt;div class=&quot;fc-count&quot;&gt;Card 1 / 20&lt;/div&gt;
                   &lt;/div&gt;
                 &lt;/div&gt;
-
                 &lt;div class=&quot;view&quot; id=&quot;right-flags&quot;&gt;
                   &lt;div class=&quot;fl&quot;&gt;
                     &lt;div class=&quot;fl-item&quot;&gt;&lt;span class=&quot;flag&quot;&gt;&lt;/span&gt;Hoisting&lt;/div&gt;
@@ -514,89 +551,168 @@
                     &lt;div class=&quot;fl-item&quot;&gt;&lt;span class=&quot;flag&quot;&gt;&lt;/span&gt;const vs let&lt;/div&gt;
                   &lt;/div&gt;
                 &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;&lt;!-- /learn-grid --&gt;
 
-                &lt;div class=&quot;view&quot; id=&quot;right-ai&quot;&gt;
-                  &lt;div class=&quot;ai&quot;&gt;
-                    &lt;div class=&quot;ai-bub user&quot;&gt;What does scope mean here?&lt;/div&gt;
-                    &lt;div class=&quot;ai-bub bot&quot;&gt;It&#x27;s where a variable can be used — let stays inside its block.&lt;/div&gt;
-                    &lt;div class=&quot;ai-in&quot;&gt;Ask Luminent…&lt;/div&gt;
+          &lt;!-- AI takeover: three capabilities --&gt;
+          &lt;div class=&quot;ai-takeover&quot; id=&quot;takeover&quot;&gt;
+            &lt;div class=&quot;tk-head&quot;&gt;&lt;span class=&quot;tk-ey&quot;&gt;Luminent AI&lt;/span&gt;&lt;span class=&quot;tk-sub&quot;&gt;three things students can ask, grounded in their course&lt;/span&gt;&lt;button class=&quot;tk-home&quot; id=&quot;tk-home&quot;&gt;&amp;#8592; Home&lt;/button&gt;&lt;/div&gt;
+            &lt;div class=&quot;cap-row&quot;&gt;
+
+              &lt;!-- 1 — ask a concept, answer + exact sources --&gt;
+              &lt;div class=&quot;cap-screen&quot; data-cap&gt;
+                &lt;div class=&quot;cap-bar&quot;&gt;&lt;span class=&quot;n&quot;&gt;1&lt;/span&gt;Ask about a concept&lt;/div&gt;
+                &lt;div class=&quot;cap-body&quot;&gt;
+                  &lt;div class=&quot;cbub user&quot;&gt;Explain variable hoisting.&lt;/div&gt;
+                  &lt;div class=&quot;cbub bot&quot;&gt;Declarations are moved to the top of their scope before the code runs — only the declaration, not the assignment.&lt;/div&gt;
+                  &lt;div class=&quot;src-box&quot;&gt;
+                    &lt;div class=&quot;sh&quot;&gt;Exact sources&lt;/div&gt;
+                    &lt;div class=&quot;src-line&quot;&gt;&lt;span class=&quot;ic&quot;&gt;Textbook&lt;/span&gt;pp. 42–43&lt;/div&gt;
+                    &lt;div class=&quot;src-line&quot;&gt;&lt;span class=&quot;ic&quot;&gt;Slides&lt;/span&gt;7 and 9&lt;/div&gt;
                   &lt;/div&gt;
                 &lt;/div&gt;
               &lt;/div&gt;
+
+              &lt;!-- 2 — generate practice from prior quiz structure --&gt;
+              &lt;div class=&quot;cap-screen&quot; data-cap&gt;
+                &lt;div class=&quot;cap-bar&quot;&gt;&lt;span class=&quot;n&quot;&gt;2&lt;/span&gt;Generate practice&lt;/div&gt;
+                &lt;div class=&quot;cap-body&quot;&gt;
+                  &lt;div class=&quot;cbub user&quot;&gt;Make practice that matches Quiz 2's format.&lt;/div&gt;
+                  &lt;div class=&quot;cbub bot&quot;&gt;Built 5 problems in the same structure as Quiz 2.&lt;/div&gt;
+                  &lt;div class=&quot;quiz-tag&quot;&gt;Modeled on Quiz 2 · 3 multiple-choice + 2 short answer&lt;/div&gt;
+                  &lt;div class=&quot;qprev&quot;&gt;
+                    &lt;div class=&quot;qrow&quot;&gt;&lt;span class=&quot;qn&quot;&gt;Q1&lt;/span&gt;&lt;span class=&quot;qt mc&quot;&gt;Multiple choice&lt;/span&gt;&lt;/div&gt;
+                    &lt;div class=&quot;qrow&quot;&gt;&lt;span class=&quot;qn&quot;&gt;Q2&lt;/span&gt;&lt;span class=&quot;qt mc&quot;&gt;Multiple choice&lt;/span&gt;&lt;/div&gt;
+                    &lt;div class=&quot;qrow&quot;&gt;&lt;span class=&quot;qn&quot;&gt;Q3&lt;/span&gt;&lt;span class=&quot;qt mc&quot;&gt;Multiple choice&lt;/span&gt;&lt;/div&gt;
+                    &lt;div class=&quot;qrow&quot;&gt;&lt;span class=&quot;qn&quot;&gt;Q4&lt;/span&gt;&lt;span class=&quot;qt sa&quot;&gt;Short answer&lt;/span&gt;&lt;/div&gt;
+                    &lt;div class=&quot;qrow&quot;&gt;&lt;span class=&quot;qn&quot;&gt;Q5&lt;/span&gt;&lt;span class=&quot;qt sa&quot;&gt;Short answer&lt;/span&gt;&lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+
+              &lt;!-- 3 — schedule a flashcard reminder at 7pm --&gt;
+              &lt;div class=&quot;cap-screen&quot; data-cap&gt;
+                &lt;div class=&quot;cap-bar&quot;&gt;&lt;span class=&quot;n&quot;&gt;3&lt;/span&gt;Schedule a reminder&lt;/div&gt;
+                &lt;div class=&quot;cap-body&quot;&gt;
+                  &lt;div class=&quot;cbub user&quot;&gt;Remind me of today's key facts at 7:00 PM with flashcards.&lt;/div&gt;
+                  &lt;div class=&quot;cbub bot&quot;&gt;Scheduled — I'll send today's key facts as flashcards.&lt;/div&gt;
+                  &lt;div class=&quot;rem-card&quot;&gt;
+                    &lt;div class=&quot;rem-top&quot;&gt;&lt;span class=&quot;rem-time&quot;&gt;7:00 PM&lt;/span&gt;&lt;span class=&quot;rem-ok&quot;&gt;Reminder set&lt;/span&gt;&lt;/div&gt;
+                    &lt;div class=&quot;rem-sub&quot;&gt;Today's key facts · 6 flashcards&lt;/div&gt;
+                    &lt;div class=&quot;fc-stack&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+
             &lt;/div&gt;
+          &lt;/div&gt;&lt;!-- /takeover --&gt;
 
-          &lt;/div&gt;&lt;!-- /learn-grid --&gt;
-        &lt;/div&gt;&lt;!-- /lwin --&gt;
-      &lt;/div&gt;&lt;!-- /demo --&gt;
+        &lt;/div&gt;&lt;!-- /stage --&gt;
+      &lt;/div&gt;&lt;!-- /lwin --&gt;
+    &lt;/div&gt;&lt;!-- /demo --&gt;
 
-      &lt;div class=&quot;controls&quot;&gt;
-        &lt;button class=&quot;replay&quot; id=&quot;replay&quot;&gt;&amp;#9654; Restart&lt;/button&gt;
-        &lt;span class=&quot;pstate&quot; id=&quot;pstate&quot;&gt;Auto-playing&lt;/span&gt;
-      &lt;/div&gt;
-
+    &lt;div class=&quot;controls&quot;&gt;
+      &lt;button class=&quot;replay&quot; id=&quot;replay&quot;&gt;&amp;#9654; Auto-play&lt;/button&gt;
+      &lt;span class=&quot;pstate&quot; id=&quot;pstate&quot;&gt;Auto-playing&lt;/span&gt;
+      &lt;span class=&quot;hint&quot;&gt;Click any tab to explore — auto-play resumes after 60s idle&lt;/span&gt;
     &lt;/div&gt;
-  &lt;/section&gt;
 
-  &lt;script&gt;
-    var pstate=document.getElementById(&#x27;pstate&#x27;);
+  &lt;/div&gt;
+&lt;/section&gt;
 
-    // middle and right advance together, in sync, each round
-    var ROUNDS=[
-      {mid:&#x27;page&#x27;,  right:&#x27;notes&#x27;},
-      {mid:&#x27;slide&#x27;, right:&#x27;flash&#x27;},
-      {mid:&#x27;exer&#x27;,  right:&#x27;flags&#x27;}
-    ];
-    var HOLD=2300;   // ms each round is shown
-    var gen=0;
+&lt;script&gt;
+  var pstate=document.getElementById('pstate');
+  var stage=document.getElementById('stage');
+  var aiTab=document.getElementById('r-ai');
 
-    function setMid(name){
-      [&#x27;page&#x27;,&#x27;slide&#x27;,&#x27;exer&#x27;].forEach(function(n){
-        var v=document.getElementById(&#x27;mid-&#x27;+n); if(v) v.classList.toggle(&#x27;on&#x27;, n===name);
-        var t=document.getElementById(&#x27;m-&#x27;+n); if(t) t.classList.toggle(&#x27;on&#x27;, n===name);
-      });
-      document.getElementById(&#x27;mid-none&#x27;).classList.toggle(&#x27;on&#x27;, name===&#x27;none&#x27;);
-    }
-    function setRight(name){
-      var map={notes:&#x27;r-notes&#x27;,flash:&#x27;r-flash&#x27;,flags:&#x27;r-flags&#x27;,ai:&#x27;r-ai&#x27;};
-      [&#x27;notes&#x27;,&#x27;flash&#x27;,&#x27;flags&#x27;,&#x27;ai&#x27;].forEach(function(n){
-        var v=document.getElementById(&#x27;right-&#x27;+n); if(v) v.classList.toggle(&#x27;on&#x27;, n===name);
-        var t=document.getElementById(map[n]); if(t) t.classList.toggle(&#x27;on&#x27;, n===name);
-      });
-      document.getElementById(&#x27;right-none&#x27;).classList.toggle(&#x27;on&#x27;, name===&#x27;none&#x27;);
-    }
-    function setRound(i){ var r=ROUNDS[i]; setMid(r.mid); setRight(r.right); }
-    function setPlaying(on){ pstate.textContent=on?&#x27;Auto-playing&#x27;:&#x27;Paused&#x27;; pstate.classList.toggle(&#x27;paused&#x27;,!on); }
-    function sleep(ms){ return new Promise(function(r){ setTimeout(r,ms); }); }
+  var ROUNDS=[
+    {mid:'page',  right:'notes'},
+    {mid:'slide', right:'flash'},
+    {mid:'exer',  right:'flags'}
+  ];
+  var HOLD=2300;
+  var gen=0;
+  function sleep(ms){ return new Promise(function(r){ setTimeout(r,ms); }); }
 
-    async function run(){
-      var my=++gen; setPlaying(true);
-      var i=0;
-      while(my===gen){
-        setRound(i % ROUNDS.length);
-        await sleep(HOLD);
-        if(my!==gen) return;
-        i++;
-      }
-    }
-
-    // manual tab click pauses autoplay (jumps that section only)
-    [[&#x27;#m-page&#x27;,function(){setMid(&#x27;page&#x27;);}],[&#x27;#m-slide&#x27;,function(){setMid(&#x27;slide&#x27;);}],[&#x27;#m-exer&#x27;,function(){setMid(&#x27;exer&#x27;);}],
-     [&#x27;#r-notes&#x27;,function(){setRight(&#x27;notes&#x27;);}],[&#x27;#r-flash&#x27;,function(){setRight(&#x27;flash&#x27;);}],[&#x27;#r-flags&#x27;,function(){setRight(&#x27;flags&#x27;);}],[&#x27;#r-ai&#x27;,function(){setRight(&#x27;ai&#x27;);}]
-    ].forEach(function(pair){
-      var el=document.querySelector(pair[0]);
-      if(el) el.addEventListener(&#x27;click&#x27;,function(){ gen++; setPlaying(false); pair[1](); });
+  function setMid(name){
+    ['page','slide','exer'].forEach(function(n){
+      var v=document.getElementById('mid-'+n); if(v) v.classList.toggle('on', n===name);
+      var t=document.getElementById('m-'+n); if(t) t.classList.toggle('on', n===name);
     });
-    document.getElementById(&#x27;replay&#x27;).addEventListener(&#x27;click&#x27;, run);
+    document.getElementById('mid-none').classList.toggle('on', name==='none');
+  }
+  function setRight(name){
+    var map={notes:'r-notes',flash:'r-flash',flags:'r-flags'};
+    ['notes','flash','flags'].forEach(function(n){
+      var v=document.getElementById('right-'+n); if(v) v.classList.toggle('on', n===name);
+      var t=document.getElementById(map[n]); if(t) t.classList.toggle('on', n===name);
+    });
+    document.getElementById('right-none').classList.toggle('on', name==='none');
+  }
+  function setRound(i){ var r=ROUNDS[i]; setMid(r.mid); setRight(r.right); }
+  function setPlaying(on){ pstate.textContent=on?'Auto-playing':'Paused — exploring'; pstate.classList.toggle('paused',!on); }
 
-    if(window.matchMedia &amp;&amp; window.matchMedia(&#x27;(prefers-reduced-motion: reduce)&#x27;).matches){
-      setRound(0);          // static first round, no looping
-    } else {
-      run();
+  function caps(){ return document.querySelectorAll('#takeover [data-cap]'); }
+  function hideCaps(){ caps().forEach(function(c){ c.classList.remove('show'); }); }
+  function showAllCaps(){ caps().forEach(function(c){ c.classList.add('show'); }); }
+
+  function openTakeoverInstant(){ stage.classList.add('ai'); aiTab.classList.add('live'); showAllCaps(); }
+  function closeTakeover(){ stage.classList.remove('ai'); aiTab.classList.remove('live'); }
+
+  async function openTakeover(my){
+    hideCaps();
+    stage.classList.add('ai'); aiTab.classList.add('live');
+    await sleep(480); if(my!==gen) return;               // screen collapses
+    var cs=caps();
+    for(var i=0;i&lt;cs.length;i++){ cs[i].classList.add('show'); await sleep(560); if(my!==gen) return; }
+    await sleep(3800);                                    // hold so all three read
+  }
+
+  var idle=null;
+  var IDLE_MS=60000;                          // resume autoplay after 60s of no clicks
+  function clearIdle(){ if(idle){ clearTimeout(idle); idle=null; } }
+  function resetIdle(){ clearIdle(); idle=setTimeout(function(){ play(); }, IDLE_MS); }
+  function pauseForUser(){ gen++; setPlaying(false); resetIdle(); }
+
+  async function play(){
+    clearIdle();
+    var my=++gen; setPlaying(true);
+    while(my===gen){
+      closeTakeover(); hideCaps();
+      setRound(0); await sleep(HOLD); if(my!==gen) return;
+      setRound(1); await sleep(HOLD); if(my!==gen) return;
+      setRound(2); await sleep(HOLD); if(my!==gen) return;
+      await openTakeover(my); if(my!==gen) return;        // collapse -&gt; three capabilities
+      closeTakeover();                                    // back to the original screen
+      await sleep(800); if(my!==gen) return;
     }
-  &lt;/script&gt;
-  &lt;/body&gt;
-  &lt;/html&gt;
-  " scrolling="no" loading="lazy"></iframe>
+  }
+
+  // manual navigation — any click pauses autoplay and (re)starts the 60s idle timer
+  [['#m-page',function(){closeTakeover();setMid('page');}],
+   ['#m-slide',function(){closeTakeover();setMid('slide');}],
+   ['#m-exer',function(){closeTakeover();setMid('exer');}],
+   ['#r-notes',function(){closeTakeover();setRight('notes');}],
+   ['#r-flash',function(){closeTakeover();setRight('flash');}],
+   ['#r-flags',function(){closeTakeover();setRight('flags');}],
+   ['#r-ai',function(){openTakeoverInstant();}],
+   ['#tk-home',function(){closeTakeover();setRound(0);}]
+  ].forEach(function(pair){
+    var elx=document.querySelector(pair[0]);
+    if(elx) elx.addEventListener('click',function(){ pauseForUser(); pair[1](); });
+  });
+  document.getElementById('replay').addEventListener('click', function(){ play(); });
+
+  if(window.matchMedia &amp;&amp; window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+    setRound(0);
+  } else {
+    play();
+  }
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+" scrolling="no" loading="lazy"></iframe>
       <iframe class="scene" id="teach" title="teach" srcdoc="&lt;!DOCTYPE html&gt;
   &lt;html lang=&quot;en&quot;&gt;
   &lt;head&gt;
@@ -740,7 +856,8 @@
 
       &lt;div class=&quot;lead&quot;&gt;
         &lt;h3&gt;Teach&lt;/h3&gt;
-        &lt;p&gt;Teachers can transform existing instructional materials into interactive learning experiences and gain visibility into student engagement, understanding, misconceptions, and progress.&lt;/p&gt;
+        &lt;p style=&quot;color:var(--ink);font-weight:600;margin-bottom:10px;&quot;&gt;Turn course materials into an intelligent teaching environment.&lt;/p&gt;
+        &lt;p&gt;Create lessons, assessments, practice activities, explanations, and supplementary resources directly from your course content. AI agents remain grounded in your materials, helping reduce preparation time while providing visibility into student understanding and progress.&lt;/p&gt;
       &lt;/div&gt;
 
       &lt;div class=&quot;demo&quot; id=&quot;demo&quot;&gt;
@@ -1128,7 +1245,8 @@
 
       &lt;div class=&quot;lead&quot;&gt;
         &lt;h3&gt;Connect&lt;/h3&gt;
-        &lt;p&gt;Content, learning activities, AI guidance, and progress are connected within the same environment, helping learners understand what they know, what they are struggling with, and what to focus on next.&lt;/p&gt;
+        &lt;p style=&quot;color:var(--ink);font-weight:600;margin-bottom:10px;&quot;&gt;Keep content, learning, and AI assistance connected.&lt;/p&gt;
+        &lt;p&gt;Slides, readings, notes, assessments, conversations, and progress exist within the same environment. AI agents understand the relationships between them, helping teachers and students navigate knowledge, identify gaps, and focus on what matters next.&lt;/p&gt;
       &lt;/div&gt;
 
       &lt;div class=&quot;demo&quot; id=&quot;demo&quot;&gt;
